@@ -15,3 +15,6 @@ Route::get('/', function () {
      showMsg(1,'Hello World!');
     //return view('welcome');
 });
+Route::prefix('educate')->group(function(){
+     Route::get("article","Educate\ArticleController@index");
+});
